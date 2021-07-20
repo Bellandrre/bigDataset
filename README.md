@@ -1,2 +1,2 @@
-# BigDataAnalytics
-Regression Using Decision Trees on King County home sale dataset 
+# Big Data Analytics
+Regression Using Decision Trees on King County home sale dataset.
