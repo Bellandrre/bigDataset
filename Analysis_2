@@ -1,0 +1,173 @@
+1)
+The T test shows that mean has an increase of 24% in revenue when the treatment group was subjected to a change in the color of the checkout button. We have a probabilty of lying almost in an area of 2.7 standard deviations away from the mean as compared to the control group which lies only in an area of 1.5 standard deviations away from mean. The chance that our hypothesis could go wrong is just 2.2e-16 according to the p-value! Thus we conclude that changing the color of the checkout button did result in more revenue.
+ 
+>t.test(asgnprchse.T$V3,asgnprchse.C$V3)
+
+	Welch Two Sample t-test
+
+data:  asgnprchse.T$V3 and asgnprchse.C$V3
+t = 24.688, df = 7016.3, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  9.134919 10.710690
+sample estimates:
+mean of x mean of y 
+  49.8713   39.9485 
+
+> sd(asgnprchse.C$V3)
+[1] 19.35955
+> sd(asgnprchse.T$V3)
+[1] 15.14331
+
+
+
+When I decreased the sample size
+
+>  t.test(hasgnprchse.T$V3,hasgnprchse.C$V3)
+
+	Welch Two Sample t-test
+
+data:  hasgnprchse.T$V3 and hasgnprchse.C$V3
+t = 0.73465, df = 7.759, p-value = 0.4842
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -14.25537  27.47937
+sample estimates:
+mean of x mean of y 
+   48.210    41.598 
+
+> sd(hasgnprchse.T$V3)
+[1] 15.43374
+> sd(hasgnprchse.C$V3)
+[1] 12.916
+
+
+Z score T: 1.92
+Z score C:1.09
+
+2) The T test shows that there is a minute increase in the mean i.e. 1.5%. The probability of lying in the same are as that of the old model is mostly same, 1.6 standard deviations away from mean for treatment and 1.5 for control groups. The probility of our hypothesis going wrong is also high by 30%. We advise not going ahead with the change proposed.
+> t.test(asgnprchse2.T$V3,asgnprchse2.C$V3)
+
+	Welch Two Sample t-test
+
+data:  asgnprchse2.T$V3 and asgnprchse2.C$V3
+t = 1.0305, df = 7497, p-value = 0.3028
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.5656199  1.8193926
+sample estimates:
+mean of x mean of y 
+ 42.51264  41.88576 
+
+sd(asgnprchse2.T$V3)
+[1] 26.42591
+> sd(asgnprchse2.C$V3)
+[1] 26.25649
+
+
+3) Tom's is correct
+ t.test(asgnprchse3.T$V3,asgnprchse3.C$V3)
+
+	Welch Two Sample t-test
+
+data:  asgnprchse3.T$V3 and asgnprchse3.C$V3
+t = 6.4699, df = 7013.8, p-value = 1.047e-10
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  8.110226 15.161223
+sample estimates:
+mean of x mean of y 
+ 64.07855  52.44283 
+
+> sd(asgnprchse3.T$V3)
+[1] 85.28919
+> sd(asgnprchse3.C$V3)
+[1] 69.09729
+
+
+
+> t.test(hasgnprchse3.T$V3,hasgnprchse3.C$V3)
+
+	Welch Two Sample t-test
+
+data:  hasgnprchse3.T$V3 and hasgnprchse3.C$V3
+t = 1.5581, df = 4.0055, p-value = 0.1941
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -71.91345 256.06945
+sample estimates:
+mean of x mean of y 
+  104.620    12.542 
+
+> sd(hasgnprchse3.C$V3)
+[1] 3.452379
+> sd(hasgnprchse3.T$V3)
+[1] 132.0999
+
+
+
+
+
+BOOKS
+>  t.test(asgnprchse3b.T$V3,asgnprchse3b.C$V3)
+
+	Welch Two Sample t-test
+
+data:  asgnprchse3b.T$V3 and asgnprchse3b.C$V3
+t = -13.751, df = 3769.5, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -2.403459 -1.803616
+sample estimates:
+mean of x mean of y 
+ 8.148146 10.251684 
+
+> sd(asgnprchse3b.T$V3)
+[1] 4.546458
+> sd(asgnprchse3b.C$V3)
+[1] 4.849531
+
+
+VIDEOS
+
+>  t.test(asgnprchse3v.T$V3,asgnprchse3v.C$V3)
+
+	Welch Two Sample t-test
+
+data:  asgnprchse3v.T$V3 and asgnprchse3v.C$V3
+t = 12.923, df = 1461.1, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 1.176957 1.598181
+sample estimates:
+mean of x mean of y 
+ 16.42037  15.03280 
+
+> sd(asgnprchse3v.T$V3)
+[1] 2.123432
+> sd(asgnprchse3v.C$V3)
+[1] 2.000086
+
+
+ELECTRONICS
+
+>  t.test(asgnprchse3e.T$V3,asgnprchse3e.C$V3)
+
+	Welch Two Sample t-test
+
+data:  asgnprchse3e.T$V3 and asgnprchse3e.C$V3
+t = 16.768, df = 2245.7, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 31.08692 39.32108
+sample estimates:
+mean of x mean of y 
+ 185.7331  150.5290 
+
+> sd(asgnprchse3e.T$V3)
+[1] 49.04909
+> sd(asgnprchse3e.C$V3)
+[1] 50.4911
+
+
+
